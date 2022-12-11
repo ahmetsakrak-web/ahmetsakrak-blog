@@ -23,7 +23,7 @@ const Blog = () => {
             <div className='verticalCardGroup'>
                 <Link className='' href="#">
                     <div className='card hover:opacity-90 transition duration-200'>
-                        <Image className='w-[100%]' src="https://images.pexels.com/photos/769525/pexels-photo-769525.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt='' />
+                        
                         <div className='p-3'>
                             <h1 className='cardTitle'>
                                 İLİŞKİLERİ OPTİMİZE ETMEK BU KADAR MI ZOR?

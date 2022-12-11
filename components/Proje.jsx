@@ -9,7 +9,7 @@ const Proje = ({title, tools, description, src,href}) => {
     transition={{duration:2}}
     viewport={{once:true}}
       href={href} target="_blank" className='relative'>
-        <Image className=' h-[220px] sm:h-[250px]  ' src={src} alt='fate-condensed' />
+        <Image className=' h-[220px] sm:h-[250px]  ' height={220} width={450} src={src} alt='fate-condensed' />
         
         
 
@@ -27,13 +27,13 @@ const Proje = ({title, tools, description, src,href}) => {
                           <h1 className='text-secondary brightness-[2.9] tracking-wider w-[150px] '>{title}</h1>
                         <div>
                           {
-                            tools.map((tool,i)=> <h1 key={i} className='text-blue-300 tracking-wider  '>- {tool}</h1>)
+                            tools.map((tool,i)=> <h1 key={i} className='text-blue-300  '>- {tool}</h1>)
                           }
                           
                           
                         </div>
                       </div>
-                      <p >
+                      <p className='mt-5'>
                         {description}
                       </p>
                     </div>

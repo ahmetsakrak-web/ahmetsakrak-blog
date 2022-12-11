@@ -50,9 +50,9 @@ const Navbar = () => {
             }}
             className='flex justify-between items-center  w-[90%] mx-auto md:max-w-screen-xl '>
                 <Link href="/#home">
-                    <Image  src='./favicon.png' 
-                    className='h-[100px] hover:rotate-180 transition duration-700'
-                     alt='logo' />
+                    <Image  width={110} height={100}   src='/favicon.png' 
+                    className='h-[100px]  hover:rotate-180 transition duration-700'
+                     alt='logo'/>
                 </Link>
 
                 <div>

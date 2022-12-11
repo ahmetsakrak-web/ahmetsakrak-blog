@@ -1,26 +1,223 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+
+@layer components{
+       
+        .baslik{
+            @apply text-4xl sm:text-3xl md:text-5xl mb-3  text-blue-300 
+        }
+       
+        .vurgu{
+          @apply text-secondary cursor-pointer myLink  relative
+        }
+
+
+
+
+
+
+
+        .form{
+          @apply mx-auto  sm:w-2/3 mt-16 
+        }
+
+        .listComponent{
+          @apply grid grid-cols-2 w-full md:grid-cols-4  sm:grid-cols-3 my-8 mx-4 text-2xl
+        }
+
+        .listGroup{
+          @apply relative mx-3 my-3
+        }
+
+        .dotIcon{
+          @apply text-blue-300  absolute sm:left-[-22px] left-[-18px] top-[11px] sm:top-[6px] text-sm sm:text-lg
+        }
+
+        .listItem{
+          @apply text-primary  font-bold  tracking-wider sm:text-xl text-base
+        }
+
+
+
+
+
+
+
+        .mainCardGroup{
+        @apply w-full flex justify-start flex-wrap my-10
+        }
+
+        .verticalCardGroup{
+          @apply   w-[300px]
+        }
+
+        .card{
+          @apply   min-h-min bg-secondary mx-2 mb-4 
+        }
+        .cardTitle{
+          @apply text-left uppercase font-bold tracking-wide mb-3 text-blue-300
+        }
+
+
+
+
+
+
+
+
+
+
+
+        .iletisimInput{
+          @apply outline-none  bg-blue-300/10 rounded-sm border-b-2  px-6 py-4 border-primary text-zinc-100 placeholder-zinc-400 block
+                w-full my-4 sm:m-8 focus:border-white transition duration-500 
+        }
+        .iletisimArea{
+          @apply border-2 tracking-wider 
+        }
+        .iletisimButon{
+          @apply bg-primary font-thin px-4 py-2 sm:ml-8 rounded-md text-base tracking-wide uppercase
+           hover:bg-white hover:text-primary hover:border-primary transition duration-500 
+
+        }
+
+        
+     
+
+  
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
 
-* {
-  box-sizing: border-box;
-}
+@layer base{
+  
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+    *{
+        margin:0;
+        padding:0;
+    }
+        
+  
+
+
+    html{
+        scrool-behavior: smooth;
+    }
+
+    body{
+      
+        @apply font-poppins bg-gradient-to-b from-[#424874] to-[#9690FC]  text-white 
+        
+    }
+
+    p{
+        @apply  text-[#F9F6EE]  md:text-lg  
+    }
+
+    span{
+        @apply text-primary
+    }
+
+    h1{
+        @apply text-lg
+    }
+
+    .projectCSS {
+      position:absolute;
+      width:100%;
+      top:0;
+      left:0;
+      z-index:10;
+      display:flex;
+      flex-direction: column;
+      justify-content:space-around;                 
+      padding:2rem;
+    }
+    .view2{
+      display:none
+    }
+
+    .projectCSS:hover .view1{
+      display:none
+    }
+    .projectCSS:hover .view2{
+      display:block;
+    }
+
+
+  .slide-in-left {
+	      -webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	      animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   }
-  body {
-    color: white;
-    background: black;
+
+  .slide-out-left {
+        -webkit-animation: slide-out-left 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+        animation: slide-out-left 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+          
   }
+
+  .myLink::before {
+        content:"";
+        display:none;
+        top:19px;
+        left:3px;
+        border-color:#800080cc;
+        border-width: 0px 2px 2px 0px;
+        position:absolute;
+        animation-name:before;
+        animation-duration: 300ms
+      }
+
+  .myLink:hover::before{
+        display:inline;
+        width:calc(100%);
+  }
+
+
+
+      
+      @keyframes slide-in-left {
+        0% {
+          -webkit-transform: translateX(-1000px);
+                  transform: translateX(-1000px);
+          opacity: 0;
+        }
+        100% {
+          -webkit-transform: translateX(0);
+                  transform: translateX(0);
+          opacity: 1;
+        }
+      }
+      
+ 
+      @keyframes slide-out-left {
+        0% {
+          -webkit-transform: translateX(0);
+          transform: translateX(0);
+          opacity: 1;
+        }
+        100% {
+          -webkit-transform: translateX(-1000px);
+          transform: translateX(-1000px);
+          opacity: 0;
+        }
+      }
+
+      
+      @keyframes before {
+        0% {
+                width:0px;
+        },
+        100% {
+                width:calc(100%);
+        }
+        }
+
+
+
+
+
 }

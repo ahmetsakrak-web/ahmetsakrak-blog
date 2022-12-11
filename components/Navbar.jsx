@@ -49,10 +49,12 @@ const Navbar = () => {
                 delay:2
             }}
             className='flex justify-between items-center  w-[90%] mx-auto md:max-w-screen-xl '>
-                <Link href="/#home">
-                    <Image  width={110} height={100}   src='/favicon.png' 
-                    className='h-[100px]  hover:rotate-180 transition duration-700'
-                     alt='logo'/>
+                <Link href="/#HOME" className='border-[5px] p-1 rounded-t-[45%] rotate-180 
+                hover:rotate-0 transition duration-500 hover:bg-primary hover:border-primary '>
+                   <h1 className='text-6xl mb-1'>
+                    Ş
+                   </h1>
+                 
                 </Link>
 
                 <div>

@@ -13,7 +13,7 @@ export default function Home() {
       <Head>
         <title>Ahmet Şakrak - Front-End Geliştirici</title>
         <meta name="description" content="Ahmet Şakrak Kişisel Web Sitesi" />
-        <meta charset="UTF-8" />
+        
         <link rel="shortcut icon" href="favicon.png" />
         
       </Head>

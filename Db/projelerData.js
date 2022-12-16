@@ -20,7 +20,7 @@ export const data =[
         id:3,
         title:"Kelime Çalışma Uygulaması",
         tools:["MERN Stack","Material UI", "Redux"],
-        description:"Aktif olarak geliştirmekte olduğum uygulama. Şuanda Kelime listeleri oluşturulabilir. Listelerle egzersiz yapılabilir.",
+        description:"Aktif olarak geliştirmekte olduğum uygulama. Şuanda kelime listeleri oluşturulabilir. Listelerle egzersiz yapılabilir.",
         src:"/images/wordexercise.png",
         href:"https://wordexercise.cyclic.app",
     },

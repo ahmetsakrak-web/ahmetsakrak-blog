@@ -83,7 +83,7 @@ const Hero = () => {
                 >
                 <p className='max-w-lg'>
                   Fron-End odaklı bu uygulamaların yanı sıra web tasarım ve kullanıcını deneyimi tasarımıyla ilgiliyim.
-                    {/* <a href='#BLOG'><span  className='vurgu'> Bloğumda</span></a> hobi olarak felsefe içerikleri paylaşıyorum.   */}             
+                    <a href='/blog'><span  className='vurgu'> Bloğumda</span></a> hobi olarak felsefe içerikleri paylaşıyorum.               
                 </p>
                 <div className=' my-8 w-full flex'>
                     <p className='sm:text-lg  text-zinc-200'>Daha fazlası için <HiOutlineArrowNarrowRight size={30} className='inline  ' /></p>  

@@ -26,7 +26,7 @@
         }
 
         .listComponent{
-          @apply grid grid-cols-2 w-full md:grid-cols-4  sm:grid-cols-3 my-8 mx-4 text-2xl
+          @apply grid grid-cols-2 w-full  my-8 mx-4 text-2xl md:grid-cols-4  sm:grid-cols-3
         }
 
         .listGroup{
@@ -48,18 +48,21 @@
 
 
         .mainCardGroup{
-        @apply w-full flex justify-start flex-wrap my-10
+          @apply w-full flex justify-start flex-wrap 
         }
 
         .verticalCardGroup{
-          @apply   w-[300px]
+          @apply w-[350px] xs:w-[250px] sm:w-[300px] m-1
         }
 
         .card{
-          @apply   min-h-min bg-secondary mx-2 mb-4 
+          @apply sm:min-h-max transition duration-200 rounded-md hover:opacity-80
         }
         .cardTitle{
-          @apply text-left uppercase font-bold tracking-wide mb-3 text-blue-300
+          @apply text-left uppercase font-bold tracking-wide mb-3 text-gray-100
+        }
+        .cardText{
+          @apply text-sm leading-5 my-2 text-gray-300
         }
 
 

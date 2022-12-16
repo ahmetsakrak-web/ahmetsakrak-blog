@@ -1,12 +1,12 @@
 const data = [
     {
     id:1,
-    title:"Postmodernizm", 
+    title:"POSTMODERNİZM", 
+    bg:"primary",
     img:"https://c4.wallpaperflare.com/wallpaper/500/442/354/outrun-vaporwave-hd-wallpaper-preview.jpg",
-    text:`<p>
+    text:`<p class="cardText">
     21. yüzyılın en baskın felsefi görüşü olan postmodernizm üzerine birşeyler söyleyebileceğimi farkettim. yaklaşık üç sene üzerine düşündüğüm ve eleştirdiğim
-    fikri benimsemeye başladığımı söyleyebilirim. Araştırmalarımda konuyu yanlış anlayıp ya da anlamayıp yorumlayan çok fazla makaleye denk geldim. Durum bu olunca gözlem 
-    yöntemini kullanmak bir kenara anlaması bile çok zor oluyor. Zaten zor bir konu olduğundan temize çekip kendi yorumumla anlatmak istedim.
+    fikri benimsemeye başladığımı söyleyebilirim. Zor bir konu olduğundan temize çekip kendi yorumumla anlatmak istedim.
     Yazı boyunca disiplinin dilsel köklerine değineceğim ve ontolojik örneklerle desteleyeceğim. Ardından postmodernizmi anlamamaktan kaynaklı yapılan eleştirileri ele alacağım. 
     Sonuç kısmında metine dair açıklamalarımı ekleyeceğim. Konsepti kafamda daha oturaklı bir noktaya koymama yardım edeceğini umuyorum.
     </p>
@@ -31,7 +31,7 @@ const data = [
     bir kişinin piskolojik problemlerinin sebebini kendinden adresleyemeyiz. Çocukluğuna inerek tahlillerde bulunduğumuz Piskoanalitik terapiyi kullanabiliriz. 
     Tarihsel bağlamda bir savaşın neden çıktığını anlamak için Hegel'in diyalektiğinden faydalanabileceğimiz gibi oyun teorisinden de faydalanabiliriz. Hepsi yapısalcı
     tekniklerdir. Poststructuralism( Jacques Derrida'nın tanımıyla) bu düşünceye tepki olarak dilin tamamlanmamış ve sürekli bir değişken olan sistem şekinde tanımlar.
-    Bu dil yapısının ardında tanımlayabileceğimiz bir objektivite yoktur. Yanlışları ve doğrularıyla bize bir perspektif sunar.
+    Bu dil yapısının ardında tanımlayabileceğimiz bir objektivite yoktur. Sağlam ya da değil bize bir perspektif sunar.
     Anlam bağlama bağlı olarak sürekli değişir. 
     </p>
     <p>
@@ -77,14 +77,15 @@ const data = [
     
   `,
     date: "2/1/22",
-    category:[{color:"#b452ff",theme:"postmodernizm"},{color:"#f0fff0",theme:"ontoloji"}]
+    category:[{color:"primary",theme:"postmodernizm"},{color:"secondary",theme:"ontoloji"}]
   },
   {
     id:2,
-    title:"İlişkilerin Optimizasyonu", 
+    title:"İLİŞKİLERİN OPTİMİZASYONU",
+    bg:"secondary", 
     img:"https://arkipedia.net/wp-content/uploads/2021/08/perspektif-2-arkipedia-1024x682.jpg",
     text:`
-          <p>
+          <p class="cardText">
             Üzerine en çok düşündüğüm konulardan biri. Diğer insanlar anlaşılabilir mi? Anladığımı düşündüğüm insanları gerçekten 
             anladım mı? insanlar birbirini anlayamıyorsa nasıl anlaşıyor? Anlamanın bir yolu var mı? Eğer anlayabilirsem ilişkilerimi daha verimli
             hale getirebilirdim, yöntemi sistemleştirerek zaman kazanabilirdim, ilişkilerde yapılan hataları kolayca saptayabilirdim ve önlemler alabilirdim.
@@ -147,7 +148,78 @@ const data = [
 
   `,
     date: "9/25/22",
-    category:[{color:"#b452ff",theme:"postmodernizm"}]
+    category:[{color:"purple-500",theme:"postmodernizm"}]
+  },
+  {
+    id:3,
+    title:"İLİŞKİLERİN OPTİMİZASYONU",
+    bg:"third", 
+    img:"https://arkipedia.net/wp-content/uploads/2021/08/perspektif-2-arkipedia-1024x682.jpg",
+    text:`
+          <p class="cardText">
+            Üzerine en çok düşündüğüm konulardan biri. Diğer insanlar anlaşılabilir mi? Anladığımı düşündüğüm insanları gerçekten 
+            anladım mı? insanlar birbirini anlayamıyorsa nasıl anlaşıyor? Anlamanın bir yolu var mı? Eğer anlayabilirsem ilişkilerimi daha verimli
+            hale getirebilirdim, yöntemi sistemleştirerek zaman kazanabilirdim, ilişkilerde yapılan hataları kolayca saptayabilirdim ve önlemler alabilirdim.
+            Ne kadar modern bir bakış açısı. İlişkileri optimize etmek. Kendi tanımlamalarım.
+
+
+            toplumsal yargılar, burçlar, "Kişisel gelişim" kitapları, kişilik testleri, Carl Jung, Sigmund Freud, Abraham Maslow, Nietzsche
+          </p>
+          <p>
+          İnsan beynine yaptığımız bütün atıflarda perspektif ve konseptlerin yeri çok büyüktür. Beynin konsept oluşturma yeteneği muazzam bir araçtır. Bu konseptleri hayata
+          baktığımız perspektiflerden oluştururuz. Perspektifler dinamik hayat açımızdır. Bulunduğumuz yer, zaman, edindiğimiz meslek, kültürel pozisyonumuz, sosyal 
+          ilişkilerimiz, etnik kökenimiz, boyutumuz hepsi bize hayata dair perspektifler sunar.  Dramatik kısmı bu perspektiflerin "ana akım" olarak algılama ilüzyonundan
+          kurtulamayız. Her ne kadar öyle olmadığını bilsekte bizi etkiler. Mesela bulunduğumuz kültürlerdeki yaşam tarzları, düşünce şekilleri zorunlu olarak gözümüze farklı 
+          kültürleri alternatif olarak değerlendirtir. Sanki yeryüzünde bizim yaşadığımız gibi herkes her zaman bu yolla yaşamış ama arada farklı kültürlerde varmış gibi.
+          Bulunduğumuz konum ve boyuttan dolayı Dünya'nın Güneş etrafında döndüğünü öğrendikten sonra bile  Güneş'in Dünya etrafında döndüğü ilüzyonundan gündelik 
+          hayatta kurtulamayız. "Başarılı" bir şirket yöneticisini düşünelim. Perspektifi gereği paranın getirdiği saygı ve güç oluşturacağı
+          hayat konseptlerini derinden etki edecektir. Şirketin kar grafiğindeki yükselme, etik ve çelişkili kararların önüne geçmek zorundadır. 
+          Dışarıdan bakan biri için aldığı kararlar "aptalca" veya "kötü" gözükebilir. Zekasına yönelik eleştirilerde bulunulabilir ama günün sonunda
+          güç odakları konumlarına istenilen çıktıları sağlamak için getirilirler. Ortam perspektifi dayatacaktır.
+         </p>
+        
+          <p>
+          Konseptler üzerine düşünülerek oluşturulmuş olabilir. Perspektiflerin sunduğu yorumlardır. Düşüncenin temel yapı yaşı ve kullanışlı anlamlandırma donanımlarıdır. 
+           Konsept olarak "Sanat" biri için zenginlerin vakitlerini geçirdiği egzantirik ve boş bir zevk olarak görülürken,
+          bir başkası için üzerine yargı koyamadığımız ve zihnimizde açtığı yorumlarla bizi büyüleyen bir alan olabilir.
+          </p>
+          <h3> Nöroloji </h3>
+          <p>
+          nöroplastisite beyinde fikirlerin nasıl çalıştığına dair bize değerli  içgörüler sağlar. Nöronlar 
+          bağlantı oluşturarak disiplinler, alışkanlıklar, anlamlar üretir. Bu nöral yolların bazıları diğerlerine göre daha fazla kullanılır.
+           Bu çok kullanılan
+          nöral yollar bir nevi ana yollara dönüşür ve tetiklenme ihtimalleri diğer yollara göre artar. Kullanılmayan diğer nöral yollar ise zamanla zayıflayıp
+          yok olabilirler. Oluşturulan konseptler temisili yargıları barındırır. Bu sayede davranışlarımızı ve
+          fikirlerimizi etkiler. Onur, Adalet, Sevgi, Toplum gibi yüksek konseptlerin nasıl şekillendiği, zihinin çalıştıracağı algoritmaları derinden etkileyecekir.
+          Bu nöral networklerin yapılanlamarı uzun yıllar alır. Bu networklerin soğrulup yerine yeni bir ağın yapılanması
+          çok daha zorlu bir süreçtir. 
+          Bu yüzden bir gecede verilen radikal kararlar, fikir ve tavır değişimleri ertesi günü unutulacaktır. Etik ve inançsal
+          tutumlar yeni fikirleri beğendiğimizde değişmezler. Çünkü beyin uzun süren şiddetli zorlamalar olmadığı sürece
+          konfor alanından çıkmak istemeyecek, enerji tasarrufu için herzamanki yolları seçecektir.
+          </p>
+
+
+          <h3> Teknoloji </h3>
+          <p>
+              Dikkatli bakıldığında ise doğa kanunlarını manipüle etmek için kullandığımız araçlar bizim davranışlarımızı, düşüncelerimizi, 
+              uzun vadede fiziksel özelliklerimizi değiştirmektedir. Lisan, ateş, transistör, internet sırasıyla ürettiğimiz en büyük teknolojilerdir.
+              Bu teknolojiler perspektiflere özel filtrelerini takarlar. Kullanımı o kadar içselleşmiştir ki orada oldukları ve fikirlerimizi hangi ölçülerde
+              etkilediklerini bilemeyiz. Bu teknolojilerin herhangi birinin olmadığı çağdaki konseptlerin varlığına ikna edilebiliriz, tanımlarını yapabiliriz ama 
+              düşüncelerimizin şekillenmesi arasında kapanamayacak uçurumlar vardır. 
+              Dolayısıyla sorunları çözme yollarımız, olaylara bakış açımız birbirinden farklı olacaktır. 
+              
+          </p>
+          <p>
+            
+             
+          </p>
+
+          
+
+
+  `,
+    date: "9/25/22",
+    category:[{color:"purple-500",theme:"postmodernizm"}]
   }
 
     

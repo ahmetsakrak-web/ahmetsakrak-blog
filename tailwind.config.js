@@ -12,11 +12,12 @@ module.exports = {
     colors:{
       primary: "#22236F",
       secondary:"#800080cc",
+      third:"#5f00ac",
       ...colors
     },
    
     screens:{
-      xs:"375px",
+      xs:"515px",
       ...defaultTheme.screens,
     },
     extend: {

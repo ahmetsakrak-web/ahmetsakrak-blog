@@ -4,12 +4,12 @@ import Hero from '../components/Hero'
 import Portfolio from '../components/Projeler'
 import Navbar from "../components/Navbar"
 import Iletisim from '../components/Iletisim'
-import Blog from '../components/Blog'
+
 
 
 export default function Home() {
   return (
-    <div className='h-screen overflow-scroll overflow-x-hidden scroll-smooth '>
+    <div className='h-screen overflow-scroll overflow-x-hidden scroll-smooth'>
       <Head>
         <title>Ahmet Şakrak - Front-End Geliştirici</title>
         <meta name="description" content="Ahmet Şakrak Kişisel Web Sitesi" />
@@ -18,7 +18,8 @@ export default function Home() {
         
       </Head>
       <Navbar />
-    <div className='lg:max-w-screen-lg md:max-w-screen-md  sm:max-w-[500px] w-[90%] mx-auto p-4'>
+    <div className='lg:max-w-screen-lg md:max-w-screen-md  sm:max-w-[500px] w-[90%] mx-auto sm:p-4'>
+       
         <section id='ANASAYFA' >
           <Hero />
         </section>
@@ -31,10 +32,8 @@ export default function Home() {
             <Portfolio />
         </section>
 
-       {/*  <section id='BLOG' >
-            <Blog />
-        </section>
- */}
+     
+
         <section id='İLETİŞİM' >
             <Iletisim />
         </section>

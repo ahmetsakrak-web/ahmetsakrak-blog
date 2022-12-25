@@ -17,23 +17,23 @@ const Proje = ({title, tools, description, src,href}) => {
                    hover:bg-blue-900/70 transition duration-700 '>
                     <div className='view2 text-center '>
                             <h1 
-                            className='  p-8 inline   rounded-md  text-[15px] bg-primary text-zinc-200 tracking-wider text-xl font-bold'>
+                            className='  p-8 inline   rounded-md  text-[15px] bg-primary text-white tracking-wider text-xl font-bold'>
                               GÖRÜNTÜLE</h1>
                     </div>
 
 
                     <div className='flex flex-col justify-around h-full  view1 '>
                       <div className='flex justify-between items-center mx-2 '>
-                          <h1 className='text-secondary brightness-[2.9] tracking-wider w-[150px] '>{title}</h1>
+                          <h1 className='text-blue-800 brightness-[2.9] tracking-wider w-[150px] '>{title}</h1>
                         <div>
                           {
-                            tools.map((tool,i)=> <h1 key={i} className='text-blue-300  '>- {tool}</h1>)
+                            tools.map((tool,i)=> <h1 key={i} className='text-white text-base sm:text-lg '>- {tool}</h1>)
                           }
                           
                           
                         </div>
                       </div>
-                      <p className='mt-5'>
+                      <p className='mt-5 text-sm md:text-lg'>
                         {description}
                       </p>
                     </div>

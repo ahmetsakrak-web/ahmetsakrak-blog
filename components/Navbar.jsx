@@ -35,8 +35,7 @@ const Navbar = () => {
 
 
   return (
-    <nav className='relative'> 
-        <div className='p-4 mt-4'>
+    <nav className='relative w-[90%] mx-auto'> 
             <motion.div 
             initial={{
                 opacity:0,
@@ -48,10 +47,11 @@ const Navbar = () => {
                 duration:2,
                 delay:2
             }}
-            className='flex justify-between items-center  w-[90%] mx-auto md:max-w-screen-xl '>
-                <Link href="/#HOME" className='border-[5px] p-1 rounded-t-[45%] rotate-180 
+            className='flex justify-between items-center mx-auto md:max-w-screen-xl mt-8 '>
+                
+                <Link href="/#HOME" className='border-[4px] sm:border-[5px] p-1 rounded-t-[45%] rotate-180 
                 hover:rotate-0 transition duration-500 hover:bg-primary hover:border-primary '>
-                   <h1 className='text-6xl mb-1'>
+                   <h1 className='text-5xl sm:text-6xl mb-1 '>
                     Ş
                    </h1>
                  
@@ -62,7 +62,7 @@ const Navbar = () => {
                         {
                             links.map(link=>
                                (<Link key={link.id} href={`/#${link.link}`}>
-                                    <li className='ml-10 text-sm uppercase cursor-pointer relative  duration-300 ease-out hover:scale-105 hover:text-blue-300 tracking-widest'>
+                                    <li className='ml-10  text-sm uppercase cursor-pointer relative  duration-300 ease-out hover:scale-105 hover:text-blue-300 tracking-widest'>
                                        {link.link}
                                     </li>
                                 </Link>))
@@ -73,8 +73,8 @@ const Navbar = () => {
                    
                     <div  className='sm:hidden'>
                      {toggle.open 
-                     ? <FaRegWindowClose  size={25} onClick={()=>(setToggle({open:false,close:true}))} />
-                     : <FaBars onClick={()=>(setToggle({open:true,close:false}))}   size={25} /> }    
+                     ? <FaRegWindowClose className='text-2xl'   onClick={()=>(setToggle({open:false,close:true}))} />
+                     : <FaBars className='text-2xl' onClick={()=>(setToggle({open:true,close:false}))}    /> }    
                     </div>
                    
                 </div>
@@ -84,7 +84,7 @@ const Navbar = () => {
             
 
 
-        </div>
+        
         {
         (
             <div className={toggle.open ? navbarCSS : (toggle.close ? `${navbarCSS} slide-out-left` : "hidden")} 
@@ -96,7 +96,7 @@ const Navbar = () => {
                                (<Link className="mt-14 mx-12 " onClick={()=>(setToggle({open:false,close:true}))}   key={link.id} href={`/#${link.link}`}>
                               
                                     <li className='
-                                    text-xl uppercase cursor-pointer tracking-wider 
+                                    text-lg uppercase cursor-pointer tracking-wider 
                                     duration-300 ease-out text-center
                                      hover:text-blue-300 hover:tracking-widest '>
                                      {link.link}

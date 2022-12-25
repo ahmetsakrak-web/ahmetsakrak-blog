@@ -12,11 +12,17 @@
     "eslint": "8.28.0",
     "eslint-config-next": "13.0.5",
     "framer-motion": "^7.6.15",
+    "graphql": "^16.6.0",
+    "graphql-request": "^5.1.0",
+    "html-react-parser": "^3.0.4",
+    "moment": "^2.29.4",
     "next": "13.0.5",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-hook-form": "^7.40.0",
-    "react-icons": "^4.6.0"
+    "react-icons": "^4.6.0",
+    "react-multi-carousel": "^2.8.2",
+    "sass": "^1.57.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
